@@ -53,9 +53,9 @@ function renderTable() {
       <td class="px-6 py-4">
         <input onclick='taskComplete(this)' type='checkbox' data-id='${todo.id}'>
       </td>
-      <td class="px-6 py-4">${todo.prior}</td>
-      <td class="px-6 py-4 dark:text-white">${todo.task}</td>
+      <td class="px-6 py-4">${todo.task}</td>
       <td class="px-6 py-4 dark:text-white">${todo.date}</td>
+      <td class="px-6 py-4 dark:text-white">${todo.prior}</td>
       <td>
         <a href='#' onclick='removeTask(this)' data-id='${todo.id}' class="px-6 py-4 font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
       </td>
@@ -70,9 +70,9 @@ function renderTable() {
       <td class="px-6 py-4">
         <input checked ="checked" onclick='taskComplete(this)' type='checkbox' data-id='${todo.id}'>
       </td>
-      <td id='done' class="px-6 py-4 line-through">${todo.prior}</td>
       <td id='done' class="px-6 py-4 line-through">${todo.task}</td>
       <td id='done' class="px-6 py-4 line-through">${todo.date}</td>
+      <td id='done' class="px-6 py-4 line-through">${todo.prior}</td>
       <td>
         <a href='#' onclick='removeTask(this)' data-id='${todo.id}' class="px-6 py-4 font-medium text-blue-600 dark:text-blue-500 hover:underline">Hapus</a>
       </td>
